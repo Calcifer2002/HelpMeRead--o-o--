@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void speak(){
         String text = data.getText().toString();
-        TTS.speak(text,TextToSpeech.QUEUE_ADD,null);
+        TTS.speak(text,TextToSpeech.QUEUE_ADD,null);//QUEUE_ADD Speaks after last speak is over, QUEUE_FLUSH Speaks before last speak is over.
     }
 
     @Override
