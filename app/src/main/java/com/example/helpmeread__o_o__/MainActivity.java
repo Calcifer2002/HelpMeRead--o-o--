@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                SizerNo.setText(i2+ "/" + Sizer.getMax());// i from onPchanged (i is the progress here
+                SizerNo.setText(i2+ "/" + Sizer.getMax());// i from onPchanged (i is the progress here)
             }
         });
         TTS= new TextToSpeech(this, new TextToSpeech.OnInitListener() {
