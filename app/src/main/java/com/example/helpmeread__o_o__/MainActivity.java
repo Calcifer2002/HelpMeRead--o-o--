@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 CropImage.activity().setGuidelines(CropImageView.Guidelines.ON).start(MainActivity.this);
-                Toast.makeText(MainActivity.this,"Please turn the picture to portrait mode!",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Please turn the picture to portrait mode!",Toast.LENGTH_LONG).show(); //the image cropper implementation
             }
         });
 
