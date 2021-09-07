@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode==RESULT_OK){
                 Uri resultUri = result.getUri();
                 try {
-                    bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(),resultUri);
+                    bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(),resultUri); //making it into a bitmap
                     TextfromImage(bitmap);
 
 
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void TextfromImage(Bitmap bitmap){
-        TextRecognizer recognizer = new TextRecognizer.Builder(this).build();
+        TextRecognizer recognizer = new TextRecognizer.Builder(this).build(); // from the implementation
         if (!recognizer.isOperational()){
             Toast.makeText(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
 
