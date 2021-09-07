@@ -167,8 +167,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else {
-            Frame frame = new Frame.Builder().setBitmap(bitmap).build(); //builder for creating a frame instance
-            SparseArray<TextBlock> textBlockSparseArray = recognizer.detect(frame); //sparse array means array in which many elements have value 0
+            Frame frame = new Frame.Builder().setBitmap(bitmap).build(); //sets the image data for the frame from a supplied bitmap.
+            SparseArray<TextBlock> textBlockSparseArray = recognizer.detect(frame); //sparse array means array in which many elements have value 0, recogniser detects text in frame 
+           
             StringBuilder stringBuilder= new StringBuilder();
             for (int i=0;i< textBlockSparseArray.size();i++){
                 TextBlock textBlock = textBlockSparseArray.valueAt(i);
